@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creazione Contenuti A+ Premium per Amazon | Ottimizzazione Store e Schede Prodotto</title>
+    <meta name="description" content="Esperti nella creazione di contenuti A+ Premium e grafiche ottimizzate per Amazon. Aumenta le vendite con schede prodotto professionali e strategie su misura.">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript">var _iub = _iub || [];_iub.csConfiguration = {"siteId":4022733,"cookiePolicyId":93776994,"lang":"en","storage":{"useSiteId":true}};</script>
+    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4022733.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+<script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+<div class="commonninja_component pid-7dd4ce08-69dc-4dab-9294-b5d42be67740"></div>
+    <style>
+        :root {
+            --dark-bg: #1C1348;
+            --accent: #6027F1;
+            --button: #FF9900;
+            --white: #FFFFFF;
+            --light-bg: #F5F7FA;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: var(--white);
+            color: var(--dark-bg);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .logo-link {
+            display: flex;
+            justify-content: center;
+            padding-left: 30px; /* Added more padding to center the logo better */
+        }
+        
+        .logo {
+            height: 120px; /* Increased logo size by 50% */
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--dark-bg);
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        /* Underline animation for nav links */
+        .nav-links a:not(.btn)::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:not(.btn):hover::after {
+            width: 100%;
+        }
+        
+        .btn {
+            background-color: var(--button);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Button hover effect with ripple */
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+            z-index: -1;
+        }
+        
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 153, 0, 0.4);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--dark-bg);
+            cursor: pointer;
+        }
+        
+        /* Hero Section - UPDATED: text aligned left, background image moved down 1cm */
+        .hero {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+            padding-top: 150px;
+        }
+        
+        /* Background image for hero section - UPDATED: moved down 1cm (approx 38px) */
+        .hero-bg {
+            position: absolute;
+            top: 38px; /* UPDATED: moved down 1cm from 0 */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://i.ibb.co/RG8bQSwf/13-mag-2025-15-49-35.png');
+            background-size: cover;
+            background-position: center center;
+            z-index: 1;
+            opacity: 0.4;
+        }
+        
+        /* Dark overlay for better text readability */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(28, 19, 72, 0.9) 0%, rgba(28, 19, 72, 0.7) 50%, rgba(28, 19, 72, 0.4) 100%);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* UPDATED: align content to left */
+            height: 100%;
+        }
+        
+        .hero-text {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; /* UPDATED: align text to left */
+            height: 100%;
+            padding-top: 50px;
+            text-align: left; /* UPDATED: text aligned left */
+            padding-left: 20px; /* Added padding to prevent text from sticking to the edge */
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            background: linear-gradient(45deg, var(--white), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: white;
+            text-align: left; /* UPDATED: ensure heading is left-aligned */
+        }
+        
+        .hero-text p {
+            font-size: 1.5rem;
+            margin-bottom: 35px;
+            line-height: 1.6;
+            text-align: left; /* UPDATED: ensure paragraph is left-aligned */
+        }
+        
+        /* Adjusted button position - moved down slightly */
+        .hero-text .btn {
+            margin-top: 5px;
+            align-self: flex-start; /* UPDATED: ensure button is left-aligned */
+        }
+        
+        /* Sections */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .features {
+            background-color: var(--white);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        /* Enhanced hover effect for feature cards */
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(96, 39, 241, 0.05) 0%, rgba(255, 153, 0, 0.05) 100%);
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+            z-index: -1;
+        }
+        
+        .feature-card:hover::before {
+            transform: translateY(0);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(96, 39, 241, 0.2);
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: rotateY(360deg);
+            color: var(--button);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            transition: all 0.8s ease;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--dark-bg);
+        }
+        
+        .feature-text {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Combined gradient background for Why Us and Method sections */
+        .gradient-sections-wrapper {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--accent) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Why Us Section */
+        .why-us {
+            color: var(--white);
+            padding-bottom: 50px; /* Reduced padding to make sections closer */
+        }
+        
+        .why-us .section-title {
+            color: var(--white);
+        }
+        
+        .why-us .section-title:after {
+            background: var(--button);
+        }
+        
+        .why-us .feature-card {
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--dark-bg);
+        }
+        
+        /* New unified badge design with connecting lines */
+        .badges-container {
+            padding: 40px 0;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        
+        /* Connecting lines for badges - now behind the card */
+        .badges-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            z-index: 1;
+        }
+        
+        /* Unified white card for badges */
+        .badges-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 60px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+            width: 80%;
+            max-width: 800px;
+        }
+        
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 120px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .badge-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s ease;
+        }
+        
+        .badge-wrapper:hover {
+            transform: scale(1.05);
+        }
+        
+        .badge {
+            max-width: 200px;
+            position: relative;
+            z-index: 2;
+            transition: transform 0.3s ease;
+        }
+        
+        /* Method Section */
+        .method {
+            color: var(--white);
+            padding-top: 50px; /* Reduced padding to make sections closer */
+        }
+        
+        .method .section-title {
+            color: var(--white);
+        }
+        
+        .method .section-title:after {
+            background: var(--button);
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            z-index: 0;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 60px;
+        }
+        
+        .timeline-content {
+            position: relative;
+            width: calc(50% - 40px);
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            z-index: 2;
+            color: var(--dark-bg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        /* Hover effect for timeline items */
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            left: calc(50% + 40px);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content:before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: -15px;
+            width: 30px;
+            height: 30px;
+            background: white;
+            transform: rotate(45deg);
+            box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content:before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            width: 30px;
+            height: 30px;
+            background: white;
+            transform: rotate(45deg);
+            box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: var(--button);
+            border-radius: 50%;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        /* Hover effect for timeline dots */
+        .timeline-item:hover .timeline-dot {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 153, 0, 0.7);
+        }
+        
+        .timeline-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--dark-bg);
+        }
+        
+        .timeline-text {
+            color: #555;
+        }
+        
+        /* Losses Section - Changed to light background */
+        .losses {
+            background-color: var(--light-bg);
+            color: var(--dark-bg);
+        }
+        
+        .losses .section-title {
+            color: var(--dark-bg);
+        }
+        
+        .losses .section-title:after {
+            background: var(--accent);
+        }
+        
+        .losses-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .loss-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            background: var(--dark-bg);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Enhanced hover effect for loss items */
+        .loss-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--button);
+            transition: width 0.3s ease;
+        }
+        
+        .loss-item:hover::before {
+            width: 10px;
+        }
+        
+        .loss-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .loss-icon {
+            font-size: 1.5rem;
+            color: var(--button);
+            margin-right: 15px;
+            margin-top: 3px;
+            transition: transform 0.3s ease;
+        }
+        
+        .loss-item:hover .loss-icon {
+            transform: rotate(360deg);
+        }
+        
+        .loss-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            padding-left: 10px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--dark-bg) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Decorative elements for CTA */
+        .cta-decoration {
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .cta-circle-1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            top: -100px;
+            left: 10%;
+        }
+        
+        .cta-circle-2 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgba(255, 153, 0, 0.1);
+            bottom: -50px;
+            right: 15%;
+        }
+        
+        .cta-dots {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
+            background-size: 10px 10px;
+            top: 30px;
+            right: 10%;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .cta-text {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        
+        .btn-large {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+        }
+        
+        /* Footer - Changed to light background with simplified layout */
+        footer {
+            background-color: var(--light-bg);
+            color: var(--dark-bg);
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo img {
+            height: 150px; /* Increased logo size by 50% */
+            margin-bottom: 20px;
+        }
+        
+        .footer-tagline {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: var(--dark-bg);
+            max-width: 600px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 0.9rem;
+            color: var(--dark-bg);
+        }
+		
+					.faq-item p {
+    padding-bottom: 15px;
+}
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-text {
+                padding-left: 20px; /* Maintain left alignment on tablets */
+                align-items: flex-start; /* Keep left alignment */
+                text-align: left; /* Keep text left-aligned */
+            }
+            
+            .timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                width: calc(100% - 80px);
+                left: 80px;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content:before,
+            .timeline-item:nth-child(even) .timeline-content:before {
+                left: -15px;
+                top: 20px;
+                box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.05);
+            }
+            
+            .timeline-dot {
+                left: 30px;
+            }
+            
+            .badges-card {
+                width: 90%;
+                padding: 30px 20px;
+            }
+            
+            .badges {
+                gap: 60px;
+            }
+			
+
+			
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-container {
+                padding: 15px;
+            }
+            
+            .logo {
+                height: 90px;
+            }
+            
+            .logo-link {
+                padding-left: 15px;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 90px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: transform 0.3s ease;
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+            }
+            
+            .nav-links a {
+                margin: 10px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-text p {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .badges {
+                gap: 30px;
+            }
+            
+            .timeline-dot {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+            
+            .footer-logo img {
+                height: 100px;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Fix for timeline line to go behind dots */
+        .timeline:before {
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo-link">
+                <img src="https://i.ibb.co/TBn9gPZG/3.png" alt="New Era Logo" class="logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%2250%22><text x=%2210%22 y=%2230%22 font-family=%22Arial%22 font-size=%2220%22 font-weight=%22bold%22>NEW ERA</text></svg>'">
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#chi-siamo">Chi siamo</a>
+                <a href="#metodo">Metodo</a>
+                <a href="#vantaggi">Vantaggi</a>
+                <a href="#contattaci">Contattaci</a>
+                <a href="https://wa.me/393759045552?text=Ciao,%20sono%20interessato%20a%20Optimization" target="_blank" class="btn">Richiedi analisi gratuita</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - UPDATED: text aligned left, background image moved down 1cm -->
+    <section class="hero" id="hero">
+        <!-- Background image with 40% opacity, moved down 1cm -->
+        <div class="hero-bg"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>OTTIMIZZATA PER CONVERTIRE</h1>
+                    <p>Aumenta le vendite su Amazon con contenuti A+ Premium e schede prodotto ottimizzate</p>
+                    <a href="https://wa.me/393759045552?text=Ciao,%20sono%20interessato%20a%20Optimization" style="color: black;" target="_blank" class="btn btn-large animate-pulse" title="ottimizzare Amazon con contenuti A+ Premium">Richiedi un'analisi per ottimizzare Amazon</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="vantaggi">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contenuti Amazon ottimizzati: perché creare uno Storefront brandizzato</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Professionalità e Fiducia</h3>
+                    <p class="feature-text">Uno Store curato comunica autorevolezza e aumenta la fiducia dei clienti nel tuo brand, migliorando la percezione del valore dei tuoi prodotti.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="feature-title">Coerenza Visiva</h3>
+                    <p class="feature-text">Colori e layout coerenti migliorano la navigazione e l'esperienza utente, rendendo il percorso d'acquisto più fluido e intuitivo.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Migliori metriche</h3>
+                    <p class="feature-text">Uno storefront ottimizzato può portare fino a +37% di conversione e +21% di vendite, trasformando i visitatori in clienti fidelizzati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined gradient sections wrapper -->
+    <div class="gradient-sections-wrapper">
+        <!-- Why Us Section -->
+        <section class="why-us" id="chi-siamo">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Esperti in ottimizzazione Amazon e contenuti A+ Premium</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="feature-title">Competenza certificata</h3>
+                        <p class="feature-text">Siamo Amazon Verified Partner con anni di esperienza nell'ottimizzazione di store per venditori di ogni dimensione.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="feature-title">Approccio orientato ai risultati</h3>
+                        <p class="feature-text">Utilizziamo strategie basate sui dati per garantire che ogni modifica porti a miglioramenti misurabili nelle performance.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="feature-title">Metodo trasparente</h3>
+                        <p class="feature-text">Forniamo report dettagliati e manteniamo una comunicazione chiara durante tutto il processo di ottimizzazione.</p>
+                    </div>
+                </div>
+                
+                <!-- Simplified badge design without circular backgrounds -->
+                <div class="badges-container" data-aos="fade-up" data-aos-delay="400">
+                    <div class="badges-card">
+                        <div class="badges">
+                            <div class="badge-wrapper">
+                                <img src="https://i.ibb.co/Wvwx5jr1/1.png" alt="Amazon Partner Badge" class="badge" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22180%22 height=%22100%22><rect width=%22180%22 height=%22100%22 fill=%22%23232F3E%22 rx=%2210%22 /><text x=%2220%22 y=%2260%22 font-family=%22Arial%22 font-size=%2216%22 fill=%22white%22>Amazon Partner</text></svg>'">
+                            </div>
+                            <div class="badge-wrapper">
+                                <img src="https://i.ibb.co/G3r20qfP/2.png" alt="Certification Badge" class="badge" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22180%22 height=%22100%22><circle cx=%2290%22 cy=%2250%22 r=%2245%22 fill=%22%23FF9900%22 /><text x=%2255%22 y=%2255%22 font-family=%22Arial%22 font-size=%2216%22 fill=%22white%22>Certified</text></svg>'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Section - now part of the same gradient background -->
+        <section class="method" id="metodo">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Come funziona il nostro processo</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Reporting</h3>
+                            <p class="timeline-text">Analisi approfondita delle metriche attuali e valutazione della grafica esistente per identificare le aree di miglioramento.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Preventivo</h3>
+                            <p class="timeline-text">Elaborazione di una proposta dettagliata con interventi specifici, tempistiche e risultati attesi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Ideazione</h3>
+                            <p class="timeline-text">Sviluppo di soluzioni grafiche ottimizzate per migliorare l'esperienza utente e aumentare il tasso di conversione.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot">4</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Testing</h3>
+                            <p class="timeline-text">Implementazione di A/B test su Amazon o tramite tool esterni per validare l'efficacia delle modifiche proposte.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot">5</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Final Delivery</h3>
+                            <p class="timeline-text">Upload delle grafiche ottimizzate e consegna di un report dettagliato sui risultati. Il lavoro si considera concluso solo alla pubblicazione.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--GIULIO-->
+        <section class="features">
+  <div class="container">
+    <h2 class="section-title">Contenuti A+ Premium per Amazon: cosa sono e perché usarli</h2>
+    <p style="text-align: center;">
+      I <strong>contenuti A+ Premium</strong> offrono esperienze visive avanzate che aumentano il coinvolgimento e la conversione. <br>
+      Il nostro team è specializzato nella <strong>progettazione di contenuti A+</strong> ad alto impatto, utilizzando dati e test per massimizzare l'efficacia delle grafiche. </p>
+  </div>
+</section>
+ <!-- FINE GIULIO-->
+        
+    </div>
+
+    <!-- Losses Section - Now with light background -->
+    <section class="losses">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Sai cosa perdi senza grafica ottimizzata?</h2>
+            <div class="losses-list">
+                <div class="loss-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="loss-icon">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="loss-text">
+                        <strong>Grafica incoerente = meno fiducia → meno vendite.</strong> I clienti si fidano di brand che presentano un'immagine professionale e coerente.
+                    </div>
+                </div>
+                <div class="loss-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="loss-icon">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="loss-text">
+                        <strong>Schede non ottimizzate = CTR bassi.</strong> Le schede prodotto non ottimizzate hanno tassi di click significativamente inferiori rispetto a quelle curate professionalmente.
+                    </div>
+                </div>
+                <div class="loss-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="loss-icon">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="loss-text">
+                        <strong>Nessun test = zero crescita.</strong> Senza test A/B e ottimizzazioni continue, il tuo store rimane statico mentre la concorrenza avanza.
+                    </div>
+                </div>
+                <div class="loss-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="loss-text">
+                        Con <strong>Optimization</strong> aumenti vendite e credibilità in modo misurabile, trasformando le visite in acquisti e gli acquirenti in clienti fedeli.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--GIULIO-->
+    <section class="faq">
+  <div class="container">
+    <h2 class="section-title">Domande frequenti sull'ottimizzazione Amazon</h2>
+    <div class="faq-item">
+      <h3>Che cosa sono i contenuti A+ Premium su Amazon?</h3>
+      <p>I <strong>contenuti A+ Premium</strong> sono moduli grafici avanzati all'interno delle schede prodotto Amazon che migliorano l’esperienza utente e aumentano il tasso di conversione.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Come si crea un contenuto A+ efficace?</h3>
+      <p>Attraverso una combinazione di storytelling visivo, coerenza del brand e uso di elementi come video, hotspot interattivi e moduli testuali ottimizzati.</p>
+    </div>
+     <div class="faq-item">
+      <h3>Amazon tiene conto di contenuti migliori per posizionare le pagine?</h3>
+      <p>Sì, Amazon tiene conto della qualità dei contenuti per il posizionamento delle pagine prodotto. La qualità e la completezza dei contenuti hanno un impatto diretto su visibilità, conversioni e ranking nei risultati di ricerca interni ad Amazon.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Come devono essere le grafiche per migliorare la conversione?</h3>
+      <p>Per <strong>aumentare la conversione su Amazon</strong>, le grafiche devono essere professionali, chiare e persuasive.  L’A+ Content va usato per raccontare il brand e approfondire caratteristiche in modo visivo e coinvolgente. </p>
+      <p>Tutte le immagini devono essere coerenti nello stile, ottimizzate per mobile e rispettare le linee guida tecniche di Amazon. Test visivi e analisi A/B aiutano a migliorare le performance nel tempo.</p>
+    </div>
+  </div>
+</section>
+<!--FINE GIULIO-->
+    
+
+    <!-- CTA Section with decorative elements -->
+    <section class="cta" id="analisi">
+        <!-- Decorative elements -->
+        <div class="cta-decoration cta-circle-1"></div>
+        <div class="cta-decoration cta-circle-2"></div>
+        <div class="cta-decoration cta-dots"></div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-aos="fade-up">Richiedi la tua analisi gratuita</h2>
+                <p class="cta-text" data-aos="fade-up" data-aos-delay="100">Chatta con un esperto per ottimizzare la tua presenza su Amazon e iniziare a vedere risultati concreti.</p>
+                <a href="https://wa.me/393759045552?text=Ciao,%20sono%20interessato%20a%20Optimization" target="_blank" class="btn btn-large" data-aos="fade-up" data-aos-delay="200">Chatta su WhatsApp</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- Cal inline embed code begins -->
+<div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "optimization", {origin:"https://cal.com"});
+
+  Cal.ns.optimization("inline", {
+    elementOrSelector:"#my-cal-inline",
+    config: {"layout":"month_view"},
+    calLink: "newera/optimization",
+  });
+
+  Cal.ns.optimization("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+  <!-- Cal inline embed code ends -->
+    </section>
+
+    <!-- Footer - Now with simplified centered layout and larger logo -->
+    <footer id="contattaci">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://i.ibb.co/TBn9gPZG/3.png" alt="Creazione contenuti A+ Premium Amazon - New Era" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%2250%22><text x=%2210%22 y=%2230%22 font-family=%22Arial%22 font-size=%2220%22 font-weight=%22bold%22>NEW ERA</text></svg>'">
+                    <p class="footer-tagline">Innova il tuo store. Ottimizza con New Era.</p>
+                    <a href="https://wa.me/393759045552?text=Ciao,%20sono%20interessato%20a%20Optimization" target="_blank" class="btn">Inizia ora</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 New Era. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS with replay on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS with once: false to make animations replay
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: false, // Changed to false to make animations replay on scroll
+                mirror: true // Enable animations to trigger when scrolling back up
+            });
+            
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const navLinksItems = navLinks.querySelectorAll('a');
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+            
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.style.padding = '5px 0';
+                    navbar.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                } else {
+                    navbar.style.padding = '15px 0';
+                    navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
